@@ -15,11 +15,15 @@ echo "---> Installing application source"
 
 ######## CUSTOMIZATION ENDS HERE ############
 
+mkdir -p /tmp/src
+
+touch index.hml info.html
+
+echo "Hello Class! DO288 rocks!!!" > /tmp/src/index.hml
+
+echo "Page built on "$(date +%Y/%m/%d) > /tmp/src/info.html
+
 cp /tmp/src/*.html ./
-
-echo "Hello Class! DO288 rocks!!!" > /index.hml
-
-echo "Page built on "$(date +%Y/%m/%d) > info.html
 
 if [ -d ./httpd-cfg ]; then
   echo "---> Copying httpd configuration files..."
