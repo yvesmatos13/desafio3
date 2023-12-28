@@ -15,11 +15,7 @@ echo "---> Installing application source"
 
 ######## CUSTOMIZATION ENDS HERE ############
 
-mkdir -p /tmp/src
-
-touch info.html index.html
-
-cp /tmp/src/*.html to ./
+cp /tmp/src/*.html ./
 
 echo "Hello Class! DO288 rocks!!!" > /index.hml
 
