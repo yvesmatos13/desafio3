@@ -15,6 +15,12 @@ echo "---> Installing application source"
 
 ######## CUSTOMIZATION ENDS HERE ############
 
+COPY /tmp/src/*.html to ./
+
+echo "Hello Class! DO288 rocks!!!" > /index.hml
+
+echo "Page built on "$(date +%Y/%m/%d) > info.html
+
 if [ -d ./httpd-cfg ]; then
   echo "---> Copying httpd configuration files..."
   if [ "$(ls -A ./httpd-cfg/*.conf)" ]; then
