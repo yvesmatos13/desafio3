@@ -15,7 +15,7 @@ echo "---> Installing application source"
 
 ######## CUSTOMIZATION ENDS HERE ############
 
-COPY /tmp/src/*.html to ./
+cp /tmp/src/*.html to ./
 
 echo "Hello Class! DO288 rocks!!!" > /index.hml
 
